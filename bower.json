@@ -4,7 +4,7 @@
   "authors": [
     "XTREEM <not@yours.com>"
   ],
-  "description": "Simple example of angularjs icm with soap",
+  "description": "Simple example of angularjs in combination with soap",
   "main": "index.html",
   "keywords": [
     "angular",

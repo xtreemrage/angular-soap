@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SOAP angularjs</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/ngActivityIndicator/css/ngActivityIndicator.css">
+</head>
+<body ng-controller="AppController">
+
+<div ng-show="AILoading" class="progress">
+    <div class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    </div>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>WeatherID</th>
+            <th>Description</th>
+            <th>PictureUrl</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="weather in weatherList">
+            <td>{{weather.WeatherID}}</td>
+            <td>{{weather.Description}}</td>
+            <td>{{weather.PictureURL}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/jquery.soap/jquery.soap.js"></script>
+<script type="text/javascript" src="bower_components/jquery.xml2json/src/jquery.xml2json.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/ngActivityIndicator/ngActivityIndicator.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

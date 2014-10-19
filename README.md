@@ -6,5 +6,10 @@ This is an simple example soap project with angular. This project uses jQuery SO
 Installation
 ------------
 
+**Prerequisite**
+
+-   node with npm
+-   bower
+
 Use the following command: `bower install`. If you want to test this locally, you will probably hit an CORS error. 
 The work-around is, to start your browser (firefox, chrome) with `--disable-web-security` command, e.g.: `google-chrome --disable-web-security` (remember to turn it off when you are done!!)
